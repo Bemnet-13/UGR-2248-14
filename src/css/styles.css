@@ -1,0 +1,297 @@
+* {
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background-image: url(../images/Background_.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.logo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 0em 0.5em;
+
+}
+
+.logo img {
+    justify-self: end;
+}
+
+.logo p {
+    font-size: larger;
+    font-family: "Brush Script MT", cursive;
+    justify-self: start;
+}
+
+.navbar ul {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-between;
+    padding: 8px 14px;
+    list-style-type: none;
+
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    padding: 5px 5px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.navbar ul li a:hover {
+    color: rgb(117, 46, 117);
+}
+
+.navbar ul li a:active {
+    color: white;
+    text-decoration-line: underline;
+    text-decoration-color: white;
+}
+
+.avatar {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+}
+
+.project {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+    justify-items: start;
+    gap: 1em 1em;
+    margin-bottom: 2em;
+
+}
+
+main {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    margin-top: 3em;
+    padding-left: 2em;
+    padding-right: 1em;
+}
+
+.begin {
+    font-size: 250%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    gap: 1em 1em;
+    margin: 30px;
+}
+
+.container i {
+    justify-self: center;
+}
+
+.side {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: max-content max-content max-content;
+    justify-items: center;
+    background-color: rgb(48, 45, 45);
+    opacity: 0.5;
+    border: 1px solid gray;
+    width: fit-content;
+    margin: auto 50px 15px 50px;
+    padding: 1.2em;
+    border-radius: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+.side:hover {
+    opacity: 1;
+}
+
+.info {
+    margin-top: 50px;
+}
+
+.justified {
+    align-self: center;
+}
+
+.know_me {
+    align-self: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.button {
+    text-decoration: none;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(132, 125, 125);
+    color: black;
+    padding: 14px 20px;
+    margin-left: initial;
+    border: 2px solid rgb(132, 125, 125);
+    border-radius: 10px;
+}
+
+article h2 {
+    color: rgb(149, 86, 208);
+}
+
+.desc {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.name {
+    text-align: center;
+}
+
+.tabular caption {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.tabular {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tabular tr {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid white;
+}
+
+.tabular td,
+th {
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+}
+
+.tabular tr:hover {
+    background-color: rgb(83, 76, 76);
+}
+
+
+.links ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    gap: 1.5em 0em;
+}
+
+.links ul li a i {
+    justify-self: center;
+}
+
+.button:hover {
+    background-color: rgb(84, 80, 80);
+    color: white;
+}
+
+i {
+    font-size: 400%;
+}
+
+i:hover {
+    color: rgb(144, 15, 199);
+    font-size: 500%;
+}
+
+.image {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    align-self: center;
+}
+
+
+.video {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        "intro side"
+        "video intro_desc"
+        "linked none"
+        "button none_2";
+}
+
+.video #first_desc {
+    grid-area: intro;
+    align-self: start;
+}
+
+.video video {
+    grid-area: video;
+    align-self: start;
+}
+
+.video #yt_link {
+    grid-area: linked;
+    align-self: start;
+}
+
+.video .button {
+    grid-area: button;
+    align-self: center;
+
+}
+
+.video video {
+    grid-area: video;
+    align-self: start;
+}
+
+.references ul {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: auto;
+    list-style-type: none;
+    list-style-position: outside;
+    opacity: 0.4;
+}
+
+.references ul:hover {
+    background-color: black;
+    opacity: initial;
+}
+
+.references ul li {
+    padding: 1em;
+    text-align: center;
+}
+
+.references ul li a {
+    text-decoration: none;
+}
+
+.references ul li a:hover {
+    text-transform: uppercase;
+    font-size: larger;
+    font-weight: bolder;
+    color: white
+}
+
+footer {
+    background-color: rgb(83, 76, 76);
+    opacity: 0.7;
+    margin: 50px 10px 10px 10px;
+    padding: 30px 15px;
+    border-radius: 15px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}

@@ -5,15 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <header>
-        <!-- image to be avatar and description -->
-        <img src="images/bemnet_a.jpg" alt="b_avatar">
-        <!-- description as p tag -->
-        <p>Much more than that</p>
-        <nav>
+        <div class="logo">
+            <!-- image to be avatar and description -->
+            <img src="images/bemnet_a.jpg" alt="b_avatar" class="avatar">
+            <!-- description as p tag -->
+            <p>--"Much more than that"--</p>
+        </div>
+        <nav class="navbar">
             <ul>
                 <li><a href="Home.html">Home</a></li>
                 <li><a href="Resume.html">Resume</a></li>
@@ -29,8 +32,9 @@
             <!-- Chronological events are narrated here -->
             <hgroup>
                 <h2>My Childhood</h2>
-                <p>I was born in Addis Ababa and raised in Hawassa.My parents have done as good a job anyone can do to
-                    raise a kid. I feel proud and honored that I have the privilege to call the my parents.I have had
+                <p>I was born in Addis Ababa and raised in Hawassa.My parents have done as good a job as anyone can do
+                    to
+                    raise a kid. I feel proud and honored that I have the privilege to call them my parents.I have had
                     all the things a child dreams of in my childhood. With discipline too.</p>
             </hgroup>
         </section>
@@ -39,10 +43,10 @@
             <!-- Chronological events are narrated here -->
             <hgroup>
                 <h2>My Academic Background </h2>
-                <p>I have not begun my academic as would many peoplke call "a genius". I was just a kid who wanted to be
-                    something more and somehow better than what I eas. I got my wish granted. I believe I had quite
-                    atremendous success for a kid who started as in place I was. When I look back to see the things I
-                    have accomplished, I feel statisfied even by the thought of it.</p>
+                <p>I have not begun my academic as would many people call "a genius". I was just a kid who wanted to be
+                    something more and somehow better than what I was. I got my wish granted. I believe I had quite
+                    a tremendous success for a kid who started as in place I was. When I look back to see the things I
+                    have accomplished, I feel satisfied even by the thought of it.</p>
             </hgroup>
         </section>
         <hr>
@@ -63,23 +67,26 @@
         <div class="video">
             <!-- Chronological events are narrated here -->
             <!-- My YouTube video is here -->
-            Here is my first ever YouTube video. It was a video submitted for competing in <a
-                href="https://breakthroughjuniorchallenge.org/">#BreakthroughJuniorChallenge</a>.
+            <p id="first_desc">
+                Here is my first ever YouTube video. It was a video submitted for competing in <a
+                    href="https://breakthroughjuniorchallenge.org/">#BreakthroughJuniorChallenge</a>.
+            </p>
             <video width="320" height="240" controls autoplay muted>
                 <source
                     src="./images/Bemnet Aschalew _ Quantization in Physics _ #BreakthroughJuniorChallenge _ 2021.mp4"
                     type="video/mp4">
             </video>
-            Here is the YouTube video link.
-            <!-- Styled as button -->
-            <a href="https://www.youtube.com/watch?v=qaS38YGSqyo">Watch Video</a>
+            <p id="yt_link">
+                Here is the YouTube video link. </p>
+            <a href="https://www.youtube.com/watch?v=qaS38YGSqyo" class="button top">Watch Video</a>
         </div>
+        <!-- Styled as button -->
         <hr>
-        <section>
+        <section class="side">
             <!--  -->
             <h3>Do you know the journey behind?</h3>
             <p>Here is an essay that summarizes of my it. Click the link below to download it.</p>
-            <a href="_Bemnet_Aschalew_short_essay.pdf" download="essay.pdf">DOWNLOAD ESSAY</a>
+            <a href="_Bemnet_Aschalew_short_essay.pdf" download="essay.pdf" class="button">DOWNLOAD ESSAY</a>
         </section>
     </main>
 
@@ -93,7 +100,7 @@
         <section>
             <h2>Grasp the know-how!</h2>
             <p>The concepts used to develop this website are: <br></p>
-            <nav>
+            <nav class="references">
                 <ul>
                     <li><a href="https://www.w3schools.com/html/default.asp">HTML Basics</a></li>
                     <li><a href="https://www.w3schools.com/html/html5_semantic_elements.asp">HTML Semantics</a></li>
