@@ -5,15 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
+    <script src="https://kit.fontawesome.com/186910cb4d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
 
 <body>
     <header>
-        <!-- image to be avatar and description -->
-        <img src="images/bemnet_a.jpg" alt="b_avatar">
-        <!-- description as p tag -->
-        <p>Much more than that</p>
-        <nav>
+        <div class="logo">
+            <!-- image to be avatar and description -->
+            <img src="images/bemnet_a.jpg" alt="b_avatar" class="avatar">
+            <!-- description as p tag -->
+            <p>--"Much more than that"--</p>
+        </div>
+        <nav class="navbar">
             <ul>
                 <li><a href="Home.html">Home</a></li>
                 <li><a href="Resume.html">Resume</a></li>
@@ -27,14 +32,13 @@
         <section>
             <h1>Get to know what I have done before</h1>
             <p>There are accomplishments and projects that I value the most.</p>
-            <div class="">
+            <div class="container">
                 <!-- icon goes here -->
-
-                <a href="Accolades.html">My Accolades</a>
-            </div>
-            <div class="">
+                <i class='fas fa-trophy'></i>
+                <a href="Accolades.html" class="button">My Accolades</a>
                 <!-- icon goes here -->
-                <a href="Portfolio.html">My Portfolio</a>
+                <i class="fas fa-code"></i>
+                <a href="Portfolio.html" class="button">My Portfolio</a>
             </div>
         </section>
     </main>
@@ -49,7 +53,7 @@
         <section>
             <h2>Grasp the know-how!</h2>
             <p>The concepts used to develop this website are: <br></p>
-            <nav>
+            <nav class="references">
                 <ul>
                     <li><a href="https://www.w3schools.com/html/default.asp">HTML Basics</a></li>
                     <li><a href="https://www.w3schools.com/html/html5_semantic_elements.asp">HTML Semantics</a></li>
