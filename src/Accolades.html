@@ -5,74 +5,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accolades</title>
-    <link rel="stylesheet" href="css/styles.css">
-
+    <link rel="stylesheet" href="new_style.css">
 </head>
 
 <body>
     <header>
-        <div class="logo">
+        <div class="header__logo">
             <!-- image to be avatar and description -->
             <img src="images/bemnet_a.jpg" alt="b_avatar" class="avatar">
             <!-- description as p tag -->
-            <p>--"Much more than that"--</p>
+            <p class="header__logo__motto">--"Much more than that"--</p>
         </div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="Resume.html">Resume</a></li>
-                <li><a href="AboutMe.html">About</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-                <li><a href="Homage.html">Homage</a></li>
+        <nav class="header__navbar">
+            <ul class="header__navbar__list">
+                <li><a href="Home.html" class="header__navbar__link">Home</a></li>
+                <li><a href="Resume.html" class="header__navbar__link">Resume</a></li>
+                <li><a href="AboutMe.html" class="header__navbar__link">About</a></li>
+                <li><a href="Contact.html" class="header__navbar__link">Contact</a></li>
+                <li><a href="Homage.html" class="header__navbar__link">Homage</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <hgroup>
-                <h2>8<sup>th</sup> grade Exam results</h2>
-            </hgroup>
-            <p>I have scored 93.75% with 100 <sup>th</sup> percenile in my region.</p>
-        </section>
-        <section>
-            <hgroup>
-                <h2>10<sup>th</sup> grade Exam results</h2>
-            </hgroup>
-            <p>I have managed to score A's in all the nine subjects I took.</p>
-
-        </section>
-        <section>
-            <hgroup>
-                <h2>12<sup>th</sup> grade Exam results</h2>
-            </hgroup>
-            <p>I have scored 636/700 which was the highest mark in Hawassa and the Sidama region that year. It was also
-                ont of the best recorded in the country.</p>
-        </section>
-        <hr>
-        <table class="tabular">
-            <caption>Results in National Examinations</caption>
-            <tr>
-                <th>Grade</th>
-                <th>Result</th>
-                <th>Distinction</th>
-            </tr>
-            <tr>
-                <td>8</td>
-                <td>100<sup>th</sup> Percentile</td>
-                <td>Great Distinction</td>
-            </tr>
-            <tr>
-                <td>10</td>
-                <td>Straight A's</td>
-                <td>Very Great Distinction</td>
-            </tr>
-            <tr>
-                <td>12</td>
-                <td>636/700</td>
-                <td>Very Great Distinction</td>
-            </tr>
-        </table>
-        <article>
+        <div class="content--sectioned">
+            <div class="col-1">
+                <section>
+                    <hgroup>
+                        <h2>8<sup>th</sup> grade Exam results</h2>
+                    </hgroup>
+                    <p>I have scored 93.75% with 100 <sup>th</sup> percenile in my region.</p>
+                </section>
+                <section>
+                    <hgroup>
+                        <h2>10<sup>th</sup> grade Exam results</h2>
+                    </hgroup>
+                    <p>I have managed to score A's in all the nine subjects I took.</p>
+            </div>
+            <div class="col-2">
+                </section>
+                <section>
+                    <hgroup>
+                        <h2>12<sup>th</sup> grade Exam results</h2>
+                    </hgroup>
+                    <p>I have scored 636/700 which was the highest mark in Hawassa and the Sidama region that year. It
+                        was
+                        also
+                        ont of the best recorded in the country.</p>
+                </section>
+                <hr>
+                <table class="table">
+                    <caption class="table__cpation">Results in National Examinations</caption>
+                    <tr class="table__rows">
+                        <th class="table__header">Grade</th>
+                        <th class="table__header">Result</th>
+                        <th class="table__header">Distinction</th>
+                    </tr>
+                    <tr class="table__rows">
+                        <td class="table__cells">8</td>
+                        <td class="table__cells">100<sup>th</sup> Percentile</td>
+                        <td class="table__cells">Great Distinction</td>
+                    </tr>
+                    <tr class="table__rows">
+                        <td class="table__cells">10</td>
+                        <td class="table__cells">Straight A's</td>
+                        <td class="table__cells">Very Great Distinction</td>
+                    </tr>
+                    <tr class="table__rows">
+                        <td class="table__cells">12</td>
+                        <td class="table__cells">636/700</td>
+                        <td class="table__cells">Very Great Distinction</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <article class="section--centered">
             <h4>Get the original certificates of the documents</h4>
             <!-- Download Essay button repeated -->
             <a href="Credentials_Bemnet_Aschalew.pdf" download="Credentials_Bemnet_Aschalew.pdf" class="button">Download
@@ -80,25 +86,30 @@
         </article>
     </main>
     <footer>
-        <article>
-            <h2>About this website</h2>
+        <article class="footer__about">
+            <h2 class="footer__about__heading">About this website</h2>
             This website is made as part of a project for Web Programming Course. I had fun doing. I hope you do too
             enjoying it.
         </article>
-
-        <section>
+        <section class="footer__info">
             <h2>Grasp the know-how!</h2>
-
             <p>The concepts used to develop this website are: <br></p>
             <nav class="references">
-                <ul>
-                    <li><a href="https://www.w3schools.com/html/default.asp">HTML Basics</a></li>
-                    <li><a href="https://www.w3schools.com/html/html5_semantic_elements.asp">HTML Semantics</a></li>
-                    <li><a href="https://www.w3schools.com/css/css_intro.asp">CSS Basics</a></li>
-                    <li><a href="https://www.w3schools.com/css/css3_flexbox.asp">CSS Flex</a></li>
-                    <li><a href="https://www.w3schools.com/css/css_grid.asp">CSS Grid</a></li>
-                    <li><a
-                            href="https://www.wix.com/blog/how-to-design-a-website#:~:text=How%20to%20design%20a%20website%201%2001.%20Set,...%207%2007.%20Design%20your%20website%20elements%20">Design
+                <ul class="references__list">
+                    <li class="references__list__items"><a href="https://www.w3schools.com/html/default.asp"
+                            class="references__link">HTML Basics</a></li>
+                    <li class="references__list__items"><a
+                            href="https://www.w3schools.com/html/html5_semantic_elements.asp"
+                            class="references__link">HTML Semantics</a></li>
+                    <li class="references__list__items"><a href="https://www.w3schools.com/css/css_intro.asp"
+                            class="references__link">CSS Basics</a></li>
+                    <li class="references__list__items"><a href="https://www.w3schools.com/css/css3_flexbox.asp"
+                            class="references__link">CSS Flex</a></li>
+                    <li class="references__list__items"><a href="https://www.w3schools.com/css/css_grid.asp"
+                            class="references__link">CSS Grid</a></li>
+                    <li class="references__list__items"><a
+                            href="https://www.wix.com/blog/how-to-design-a-website#:~:text=How%20to%20design%20a%20website%201%2001.%20Set,...%207%2007.%20Design%20your%20website%20elements%20"
+                            class="references__link">Design
                             Principles</a></li>
 
                 </ul>

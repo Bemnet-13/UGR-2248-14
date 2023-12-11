@@ -1,0 +1,528 @@
+* {
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background-image: url(images/Background_.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.header__logo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.header__logo__motto {
+    font-size: larger;
+    font-family: "Brush Script MT", cursive;
+    justify-self: start;
+}
+
+.header__navbar__list {
+    padding: 8px 14px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.story__video {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+.header__navbar__link {
+    text-decoration: none;
+    padding: 5px 5px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.header__navbar__link:hover {
+    color: rgb(117, 46, 117);
+}
+
+.header__navbar__link:active {
+    color: white;
+    text-decoration-line: underline;
+    text-decoration-color: white;
+}
+
+.avatar {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+}
+
+main {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    margin-top: 3em;
+    padding-left: 2em;
+    padding-right: 1em;
+}
+
+.introduction__first__begin {
+    font-size: 250%;
+}
+
+.navigation__accolades,
+.navigation__portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 0 1 40%;
+}
+
+.navigation__accolades i,
+.navigation__portfolio i {
+    align-self: center;
+}
+
+.container i {
+    align-self: center;
+}
+
+.section--centered {
+    text-align: center;
+}
+
+.side {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: rgb(48, 45, 45);
+    opacity: 0.5;
+    transition: opacity 0.5s;
+    border: 1px solid gray;
+    width: fit-content;
+    margin: 3em 50px 15px 50px;
+    padding: 1.2em;
+    align-items: center;
+    border-radius: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+.home_info__side--centered {
+    display: flex;
+    justify-content: center;
+}
+
+.side--centered {
+    display: flex;
+    justify-content: center;
+
+}
+
+.side:hover {
+    opacity: 1;
+}
+
+.info {
+    margin-top: 50px;
+}
+
+.justified {
+    align-self: center;
+}
+
+.know_me {
+    align-self: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.button {
+    text-decoration: none;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(132, 125, 125);
+    color: black;
+    padding: 14px 20px;
+    margin-left: initial;
+    border: 2px solid rgb(132, 125, 125);
+    border-radius: 10px;
+}
+
+.footer__about__heading,
+.info__heading {
+    color: rgb(149, 86, 208);
+}
+
+.person {
+    display: flex;
+    flex-flow: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.person__figure {
+    align-self: center;
+}
+
+.person__name {
+    text-align: center;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table__caption {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.table__rows {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid white;
+}
+
+.table__cells,
+.table__headers {
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+}
+
+.table__rows:hover {
+    background-color: rgb(83, 76, 76);
+}
+
+.links__list {
+    display: flex;
+    flex-flow: column wrap;
+    list-style-type: none;
+}
+
+.links__list__items {
+    align-items: center;
+    margin: 20px;
+}
+
+.links--icons {
+    text-decoration: none;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.button:hover {
+    background-color: rgb(84, 80, 80);
+    color: white;
+}
+
+.icon {
+    font-size: 400%;
+    transition: font-size 0.7s;
+}
+
+.icon:hover {
+    color: rgb(144, 15, 199);
+    font-size: 500%;
+}
+
+.image {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.references__list {
+    display: flex;
+    flex-flow: column wrap;
+    list-style-type: none;
+    opacity: 0.4;
+    text-align: center;
+    transition: background-color 0.7s;
+}
+
+.references__list:hover {
+    background-color: black;
+    opacity: initial;
+}
+
+.references__list__items {
+    padding: 15px;
+}
+
+.references__link {
+    text-decoration: none;
+    transition: font-size 0.5s;
+}
+
+.references__link:hover {
+    text-transform: uppercase;
+    font-size: 105%;
+    font-weight: bolder;
+    color: white
+}
+
+footer {
+    background-color: rgb(83, 76, 76);
+    opacity: 0.7;
+    margin: 50px 10px 10px 10px;
+    padding: 30px 15px;
+    border-radius: 15px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+/* Both for tablet and PC */
+/* There is a slight difference in the accolades page from the design since
+ I have put all the photos in a pdf file for downloading. I apologize 
+ for the inconvenience. */
+@media screen and (min-width: 768px) {
+
+    /* changed */
+    header {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    /* changed */
+    .header__navbar {
+        flex: 0 1 50%;
+    }
+
+    .header__logo {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        flex: 0 0 50%;
+    }
+
+    /* changed */
+    .header__navbar__list {
+        padding: 8px 14px;
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+        justify-content: space-between;
+    }
+
+    /* changed */
+    .navigation {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .home_info {
+        margin: 1em;
+    }
+
+    .story--sectioned {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+
+    .col-1,
+    .col-2 {
+        flex: 0 0 40%;
+        padding: 1em;
+    }
+
+    /* changed */
+    .section--centered {
+        text-align: center;
+    }
+
+    /* changed */
+    .content--sectioned {
+        display: flex;
+        /* flex-wrap: wrap; */
+        justify-content: space-around;
+    }
+
+    .content--sectioned main {
+        padding: 0;
+    }
+
+    .home_info__side--centered {
+        order: -1;
+    }
+
+    /* changed */
+    .container {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px;
+    }
+
+    .navigation__accolades,
+    .navigation__portfolio {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex: 0 1 40%;
+    }
+
+    .container i {
+        align-self: center;
+    }
+
+    /* changed */
+    .links__list {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    .links__list__items {
+        align-items: center;
+        margin: 20px;
+    }
+
+    .links--icons {
+        text-decoration: none;
+        padding: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+    }
+
+    /* changed */
+    .references__list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        list-style-type: none;
+        opacity: 0.4;
+        text-align: center;
+    }
+
+    .person {
+        display: flex;
+        flex-flow: wrap;
+        /* justify-content: center; */
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .person__figure {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        flex: 1 1 25%;
+        align-self: flex-end;
+    }
+
+    .person__name {
+        align-self: center;
+    }
+
+    .person__description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1 1 60%;
+    }
+
+}
+
+
+@media screen and (orientation:landscape) {
+
+    /* changed */
+    .accolades--sectioned {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content--sectioned {
+        display: flex;
+        /* flex-wrap: wrap; */
+        justify-content: space-around;
+    }
+
+    .content--sectioned main {
+        padding: 0;
+    }
+
+    .home_info__side--centered {
+        order: -1;
+    }
+
+    .links__list {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    .links__list__items {
+        align-items: center;
+        margin: 20px;
+    }
+
+    .links--icons {
+        text-decoration: none;
+        padding: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+    }
+
+    .person {
+        display: flex;
+        flex-flow: wrap;
+        /* justify-content: center; */
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .person__figure {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        flex: 1 1 25%;
+        align-self: flex-end;
+    }
+
+    .person__name {
+        align-self: center;
+    }
+
+    .person__description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1 1 60%;
+    }
+
+    .navigation {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .navigation__accolades,
+    .navigation__portfolio {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex: 0 1 40%;
+    }
+
+    .story--sectioned {
+        display: flex;
+        flex-direction: column;
+    }
+}
