@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="new_style.css">
+
+    <link rel="stylesheet" href="style/styles.css">
+    <script defer type="module" src="js/portfolio.js"></script>
+    
 
 </head>
 
@@ -27,8 +30,8 @@
             </ul>
         </nav>
     </header>
-    <div class="content--sectioned">
-        <main class="home_info">
+    <div class="content--sectioned  transition-fade" id="swup">
+        <main class="home_info transition-fade" id="swup">
             <section class="introduction">
                 <!-- Some things about me -->
                 <hgroup class="introduction__first">
@@ -48,7 +51,7 @@
                     enjoying it. </p>
                 </section>
         </main>
-        <div class="home_info__side--centered">
+        <div class="home_info__side--centered transition-swipe">
             <aside class="side">
                 <!-- image as an avatar img -->
                 <img src="images/bemnet_a.jpg" alt="b_avatar" class="image"><br>
@@ -59,7 +62,7 @@
             </aside>
         </div>
     </div>
-
+    <div class="transition-wipe overlay"></div>
     <footer>
         <article class="footer__about">
             <h2 class="footer__about__heading">About this website</h2>
