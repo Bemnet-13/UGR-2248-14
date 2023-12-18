@@ -5,85 +5,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homage</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
-    <header>
+    <header class="level">
         <!-- image to be avatar and description -->
-        <img src="images/bemnet_a.jpg" alt="b_avatar">
-        <!-- description as p tag -->
-        <p>Much more than that</p>
-        <nav>
+        <div class="level-left">
+            <figure class="image is-128x128 column">
+                <img src="images/bemnet_a.jpg" class="is-rounded level-item" alt="b_avatar">
+            </figure>
+            <!-- description as p tag -->
+            <p><em>--Much more than that--</em>
+        </div>
+        <nav class="breadcrumb" aria-label="breadcrumbs">
             <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="Resume.html">Resume</a></li>
-                <li><a href="AboutMe.html">About</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-                <li><a href="Homage.html">Homage</a></li>
+                <li class="level-item"><a href="Home.html">Home</a></li>
+                <li class="level-item"><a href="Resume.html">Resume</a></li>
+                <li class="level-item"><a href="AboutMe.html">About</a></li>
+                <li class="level-item"><a href="Contact.html">Contact</a></li>
+                <li class="level-item"><a href="Homage.html">Homage</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Why this page?</h2>
-            <p>This page is dedicated to credit people who had led me down the right path and keep providing guidance
+        <section class="section has-text-centered">
+            <h2 class="title">Why this page?</h2>
+            <p class="subtitle">This page is dedicated to credit people who had led me down the right path and keep
+                providing guidance
                 and LOVE again and again.</p>
         </section>
-        <section>
-            <figure>
-                <!-- Image styled as avatar(rounded) -->
-                <img src="images/mother.jpg" alt="mother">
-                <figcaption>Tiruwork Lakew</figcaption>
-            </figure>
-            <hgroup>
-                <h2>My mother</h2>
-                <p>She is strong woman. She is my lantern when I feel lost. I hope I will have the chance to make her
-                    dream life come true.</p>
-            </hgroup>
-        </section>
-        <section>
-            <figure>
-                <!-- Image styled as avatar(rounded) -->
-                <img src="images/father.jpg" alt="father">
-                <figcaption>Aschalew Wodaj</figcaption>
-            </figure>
-            <hgroup>
-                <h2>My Father</h2>
-                <p>He is one of a kind. He raised me with discipline and above all LOVE.</p>
-            </hgroup>
-        </section>
-        <section>
-            <figure>
-                <!-- Image styled as avatar(rounded) -->
-                <img src="images/Betty.JPG" alt="Betty">
-                <figcaption>Betelhem Aschalew</figcaption>
-            </figure>
-            <hgroup>
-                <h2>My Sister</h2>
-                <p>She is someone who paid a lot of sacrifices for me to be here. She was constantly worried by the time
-                    I was struggling and She still is. I hope all the good things in the world to happen to her.</p>
-            </hgroup>
-        </section>
+        <div class="columns">
+            <div class="column is-one-fifth"></div>
+            <div class="column">
+                <div class="box">
+                    <section class="media">
+                        <figure class="image is-128x128 media-left">
+                            <!-- Image styled as avatar(rounded) -->
+                            <img src="images/mother.jpg" alt="mother">
+                            <figcaption>Tiruwork Lakew</figcaption>
+                        </figure>
+                        <hgroup class="media-content">
+                            <h2 class="has-text-centered">My mother</h2>
+                            <p>She is strong woman. She is my lantern when I feel lost. I hope I will have the chance to
+                                make
+                                her
+                                dream life come true.</p>
+                        </hgroup>
+                    </section>
+                </div>
+                <div class="box">
+                    <section class="media">
+                        <figure class="image is-128x128 media-left">
+                            <!-- Image styled as avatar(rounded) -->
+                            <img src="images/father.jpg" alt="father">
+                            <figcaption>Aschalew Wodaj</figcaption>
+                        </figure>
+                        <hgroup class="media-content">
+                            <h2 class="has-text-centered">My Father</h2>
+                            <p>He is one of a kind. He raised me with discipline and above all LOVE.</p>
+                        </hgroup>
+                    </section>
+                </div>
+                <div class="box">
+                    <section class="media pb-6">
+                        <figure class="image is-128x128 media-left">
+                            <!-- Image styled as avatar(rounded) -->
+                            <img src="images/Betty.JPG" alt="Betty" class="is-rounded">
+                            <figcaption>Betelhem Aschalew</figcaption>
+                        </figure>
+                        <hgroup class="media-content">
+                            <h2 class="has-text-centered">My Sister</h2>
+                            <p>She is someone who paid a lot of sacrifices for me to be here. She was constantly
+                                worried
+                                by
+                                the time I was struggling and She still is. I hope all the good things in the world
+                                to
+                                happen to her.
+                            </p>
+                        </hgroup>
+                    </section>
+                </div>
+            </div>
     </main>
-    <footer>
-        <article>
-            <h2>About this website</h2>
+    <div>
+        <progress class="progress is-link mt-6" value="100" max="100">15%</progress>
+    </div>
+    <footer class="footer block">
+        <article class="content has-text-centered">
+
+            <h2>About this website...</h2>
             This website is made as part of a project for Web Programming Course. I had fun doing. I hope you do too
             enjoying it.
         </article>
 
         <section>
             <h2>Grasp the know-how!</h2>
-
             <p>The concepts used to develop this website are: <br></p>
             <nav>
-                <ul>
-                    <li><a href="https://www.w3schools.com/html/default.asp">HTML Basics</a></li>
-                    <li><a href="https://www.w3schools.com/html/html5_semantic_elements.asp">HTML Semantics</a></li>
-                    <li><a href="https://www.w3schools.com/css/css_intro.asp">CSS Basics</a></li>
-                    <li><a href="https://www.w3schools.com/css/css3_flexbox.asp">CSS Flex</a></li>
-                    <li><a href="https://www.w3schools.com/css/css_grid.asp">CSS Grid</a></li>
-                    <li><a
+                <ul class="columns has-text-centered">
+                    <li class="column"><a href="https://www.w3schools.com/html/default.asp">HTML Basics</a></li>
+                    <li class="column"><a href="https://www.w3schools.com/html/html5_semantic_elements.asp">HTML
+                            Semantics</a></li>
+                    <li class="column"><a href="https://www.w3schools.com/css/css_intro.asp">CSS Basics</a></li>
+                    <li class="column"><a href="https://www.w3schools.com/css/css3_flexbox.asp">CSS Flex</a></li>
+                    <li class="column"><a href="https://www.w3schools.com/css/css_grid.asp">CSS Grid</a></li>
+                    <li class="column"><a
                             href="https://www.wix.com/blog/how-to-design-a-website#:~:text=How%20to%20design%20a%20website%201%2001.%20Set,...%207%2007.%20Design%20your%20website%20elements%20">Design
                             Principles</a></li>
 
@@ -98,6 +125,6 @@
             </address>
         </section>
     </footer>
-
 </body>
+
 </html>

@@ -5,71 +5,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
-    <header>
+    <header class="level">
         <!-- image to be avatar and description -->
-        <img src="images/bemnet_a.jpg" alt="b_avatar">
-        <!-- description as p tag -->
-        <p>Much more than that</p>
-        <nav>
+        <div class="level-left">
+            <figure class="image is-128x128 column">
+                <img src="images/bemnet_a.jpg" class="is-rounded level-item" alt="b_avatar">
+            </figure>
+            <!-- description as p tag -->
+            <p><em>--Much more than that--</em>
+        </div>
+        <nav class="breadcrumb" aria-label="breadcrumbs">
             <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="Resume.html">Resume</a></li>
-                <li><a href="AboutMe.html">About</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-                <li><a href="Homage.html">Homage</a></li>
+                <li class="level-item"><a href="Home.html">Home</a></li>
+                <li class="level-item"><a href="Resume.html">Resume</a></li>
+                <li class="level-item"><a href="AboutMe.html">About</a></li>
+                <li class="level-item"><a href="Contact.html">Contact</a></li>
+                <li class="level-item"><a href="Homage.html">Homage</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <hgroup>
-                <!-- Preferrable heading should be selected -->
-                <h2>Project 1</h2>
-                <p>Here is my first project</p>
-            </hgroup>
-            <!-- See Project... styled like the wireframe -->
-            <a href="https://lnkd.in/eGtVaT4d">See Project 1</a>
-        </section>
+    <div class="columns">
+        <main class="column">
+            <section>
+                <hgroup class="section has-text-centered">
+                    <!-- Preferrable heading should be selected -->
+                    <h2 class="title">Project 1</h2>
+                    <p class="subtitle">Here is my first project</p>
+                    <a href="https://lnkd.in/eGtVaT4d" class="button is-link is-outlined">See Project 1</a>
+                </hgroup>
+                <!-- See Project... styled like the wireframe -->
 
-        <section>
-            <hgroup>
-                <!-- Preferrable heading should be selected -->
-                <h2>Project 2</h2>
-                <p>Here is my second project</p>
-            </hgroup>
-            <!-- See Project... styled like the wireframe -->
-            <a href="https://lnkd.in/e24Vkqvp">See Project 2</a>
-        </section>
+            </section>
 
-    </main>
-    <aside>
-        <p>If you want to know more about me, Click the link below</p>
-        <!-- link styled as button -->
-        <a href="https://www.linkedin.com/in/bemnet-aschalew-9868a2295/">Know Me</a>
-    </aside>
+            <section>
+                <hgroup class="section has-text-centered">
+                    <!-- Preferrable heading should be selected -->
+                    <h2 class="title">Project 2</h2>
+                    <p class="subtitle">Here is my second project</p>
+                    <a href="https://lnkd.in/e24Vkqvp" class="button is-link is-outlined">See Project 2</a>
+                </hgroup>
+                <!-- See Project... styled like the wireframe -->
 
-    <footer>
-        <article>
-            <h2>About this website</h2>
+            </section>
+
+        </main>
+        <aside class="column section has-text-centered">
+            <p class="subtitle">If you want to know more about me, Click the link below</p>
+            <!-- link styled as button -->
+            <a href="https://www.linkedin.com/in/bemnet-aschalew-9868a2295/" class="button is-link is-outlined">Know
+                Me</a>
+        </aside>
+    </div>
+    <progress class="progress is-link" value="40" max="100">15%</progress>
+
+    <footer class="footer">
+        <article class="content has-text-centered">
+
+            <h2>About this website...</h2>
             This website is made as part of a project for Web Programming Course. I had fun doing. I hope you do too
             enjoying it.
         </article>
 
         <section>
             <h2>Grasp the know-how!</h2>
-
             <p>The concepts used to develop this website are: <br></p>
             <nav>
-                <ul>
-                    <li><a href="https://www.w3schools.com/html/default.asp">HTML Basics</a></li>
-                    <li><a href="https://www.w3schools.com/html/html5_semantic_elements.asp">HTML Semantics</a></li>
-                    <li><a href="https://www.w3schools.com/css/css_intro.asp">CSS Basics</a></li>
-                    <li><a href="https://www.w3schools.com/css/css3_flexbox.asp">CSS Flex</a></li>
-                    <li><a href="https://www.w3schools.com/css/css_grid.asp">CSS Grid</a></li>
-                    <li><a
+                <ul class="columns has-text-centered">
+                    <li class="column"><a href="https://www.w3schools.com/html/default.asp">HTML Basics</a></li>
+                    <li class="column"><a href="https://www.w3schools.com/html/html5_semantic_elements.asp">HTML
+                            Semantics</a></li>
+                    <li class="column"><a href="https://www.w3schools.com/css/css_intro.asp">CSS Basics</a></li>
+                    <li class="column"><a href="https://www.w3schools.com/css/css3_flexbox.asp">CSS Flex</a></li>
+                    <li class="column"><a href="https://www.w3schools.com/css/css_grid.asp">CSS Grid</a></li>
+                    <li class="column"><a
                             href="https://www.wix.com/blog/how-to-design-a-website#:~:text=How%20to%20design%20a%20website%201%2001.%20Set,...%207%2007.%20Design%20your%20website%20elements%20">Design
                             Principles</a></li>
 

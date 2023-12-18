@@ -5,87 +5,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    <link rel="stylesheet" href="style/style.css">
+
 </head>
 
 <body>
-    <header>
+    <header class="level">
         <!-- image to be avatar and description -->
-        <img src="images/bemnet_a.jpg" alt="b_avatar">
-        <!-- description as p tag -->
-        <p>Much more than that</p>
-        <nav>
+        <div class="level-left">
+            <figure class="image is-128x128 column">
+                <img src="images/bemnet_a.jpg" class="is-rounded level-item" alt="b_avatar">
+            </figure>
+            <!-- description as p tag -->
+            <p><em>--Much more than that--</em>
+        </div>
+        <nav class="breadcrumb" aria-label="breadcrumbs">
             <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="Resume.html">Resume</a></li>
-                <li><a href="AboutMe.html">About</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-                <li><a href="Homage.html">Homage</a></li>
+                <li class="level-item"><a href="Home.html">Home</a></li>
+                <li class="level-item"><a href="Resume.html">Resume</a></li>
+                <li class="level-item"><a href="AboutMe.html">About</a></li>
+                <li class="level-item"><a href="Contact.html">Contact</a></li>
+                <li class="level-item"><a href="Homage.html">Homage</a></li>
             </ul>
         </nav>
     </header>
-
-    <main>
-        <section>
-            <!-- Chronological events are narrated here -->
-            <hgroup>
-                <h2>My Childhood</h2>
-                <p>I was born in Addis Ababa and raised in Hawassa.My parents have done as good a job anyone can do to
-                    raise a kid. I feel proud and honored that I have the privilege to call the my parents.I have had
-                    all the things a child dreams of in my childhood. With discipline too.</p>
-            </hgroup>
-        </section>
-        <hr>
-        <section>
-            <!-- Chronological events are narrated here -->
-            <hgroup>
-                <h2>My Academic Background </h2>
-                <p>I have not begun my academic as would many peoplke call "a genius". I was just a kid who wanted to be
-                    something more and somehow better than what I eas. I got my wish granted. I believe I had quite
-                    atremendous success for a kid who started as in place I was. When I look back to see the things I
-                    have accomplished, I feel statisfied even by the thought of it.</p>
-            </hgroup>
-        </section>
-        <hr>
-        <section>
-            <!-- Chronological events are narrated here -->
-            <!-- May be some poem -->
-            <hgroup>
-                <h2>My abilities and Hobbies</h2>
-                <p>I firmly believe that I have been bestowed upon quite a lot of gift. From the academics to a an
-                    environment I can flourish in, I think I have innumerable gifts that I have not even scratched the
-                    surface.</p>
-                <p>I have also some hobbies which are entertaining and instructive. I love Photography. I am also fond
-                    of Sports such as Football, Basketball and track and field athletics.I also watch documentaries and
-                    other informative videos.</p>
-            </hgroup>
-        </section>
-        <hr>
-        <div class="video">
-            <!-- Chronological events are narrated here -->
-            <!-- My YouTube video is here -->
-            Here is my first ever YouTube video. It was a video submitted for competing in <a
-                href="https://breakthroughjuniorchallenge.org/">#BreakthroughJuniorChallenge</a>.
-            <video width="320" height="240" controls autoplay muted>
-                <source
-                    src="./images/Bemnet Aschalew _ Quantization in Physics _ #BreakthroughJuniorChallenge _ 2021.mp4"
-                    type="video/mp4">
-            </video>
-            Here is the YouTube video link.
-            <!-- Styled as button -->
-            <a href="https://www.youtube.com/watch?v=qaS38YGSqyo">Watch Video</a>
+    <main class="columns">
+        <div class="column">
+            <section>
+                <!-- Chronological events are narrated here -->
+                <hgroup class="section">
+                    <h2 class="title">My Childhood</h2>
+                    <p>I was born in Addis Ababa and raised in Hawassa.My parents have done as good a job anyone can do
+                        to
+                        raise a kid. I feel proud and honored that I have the privilege to call the my parents.I have
+                        had
+                        all the things a child dreams of in my childhood. With discipline too.</p>
+                </hgroup>
+            </section>
+            <hr>
+            <section>
+                <!-- Chronological events are narrated here -->
+                <hgroup class="section">
+                    <h2 class="title">My Academic Background </h2>
+                    <p>I have not begun my academic as would many peoplke call "a genius". I was just a kid who wanted
+                        to be
+                        something more and somehow better than what I eas. I got my wish granted. I believe I had quite
+                        atremendous success for a kid who started as in place I was. When I look back to see the things
+                        I
+                        have accomplished, I feel statisfied even by the thought of it.</p>
+                </hgroup>
+            </section>
+            <hr>
         </div>
-        <hr>
-        <section>
-            <!--  -->
-            <h3>Do you know the journey behind?</h3>
-            <p>Here is an essay that summarizes of my it. Click the link below to download it.</p>
-            <a href="_Bemnet_Aschalew_short_essay.pdf" download="essay.pdf">DOWNLOAD ESSAY</a>
-        </section>
-    </main>
+        <div class="column">
+            <section class>
+                <!-- Chronological events are narrated here -->
+                <!-- May be some poem -->
+                <hgroup class="section">
+                    <h2 class="title">My abilities and Hobbies</h2>
+                    <p>I firmly believe that I have been bestowed upon quite a lot of gift. From the academics to a an
+                        environment I can flourish in, I think I have innumerable gifts that I have not even scratched
+                        the
+                        surface.</p>
+                    <p>I have also some hobbies which are entertaining and instructive. I love Photography. I am also
+                        fond
+                        of Sports such as Football, Basketball and track and field athletics.I also watch documentaries
+                        and
+                        other informative videos.</p>
+                </hgroup>
+            </section>
+            <hr>
+            <div class="video">
+                <!-- Chronological events are narrated here -->
+                <!-- My YouTube video is here -->
+                <section class="section">
+                    <h2 class="title">My Video</h2>
+                    <p>
+                        Here is my first ever YouTube video. It was a video submitted for competing in <a
+                            href="https://breakthroughjuniorchallenge.org/">#BreakthroughJuniorChallenge</a>
+                        .
+                    </p>
+                </section>
 
-    <footer>
-        <article>
-            <h2>About this website</h2>
+                <section class="section">
+                    <video width="320" height="240" controls autoplay muted>
+                        <source
+                            src="./images/Bemnet Aschalew _ Quantization in Physics _ #BreakthroughJuniorChallenge _ 2021.mp4"
+                            type="video/mp4">
+                    </video>
+                    <p>
+                        Here is the YouTube video link. </p>
+                    <!-- Styled as button -->
+                    <a href="https://www.youtube.com/watch?v=qaS38YGSqyo" class="button is-link is-outlined">Watch
+                        Video</a>
+
+                </section>
+                <hr>
+            </div>
+    </main>
+    <div class="journey--centered">
+        <section class="section has-text-centered">
+            <!--  -->
+            <h3 class="title">Do you know the journey behind?</h3>
+            <p class="subtitle">Here is an essay that summarizes it. Click the link below to download it.</p>
+            <a href="_Bemnet_Aschalew_short_essay.pdf" download="essay.pdf" class="button is-link is-outlined">DOWNLOAD
+                ESSAY</a>
+        </section>
+    </div>
+
+
+    <progress class="progress is-link" value="60" max="100">15%</progress>
+
+    <footer class="footer">
+        <article class="content has-text-centered">
+
+            <h2>About this website...</h2>
             This website is made as part of a project for Web Programming Course. I had fun doing. I hope you do too
             enjoying it.
         </article>
@@ -94,13 +128,14 @@
             <h2>Grasp the know-how!</h2>
             <p>The concepts used to develop this website are: <br></p>
             <nav>
-                <ul>
-                    <li><a href="https://www.w3schools.com/html/default.asp">HTML Basics</a></li>
-                    <li><a href="https://www.w3schools.com/html/html5_semantic_elements.asp">HTML Semantics</a></li>
-                    <li><a href="https://www.w3schools.com/css/css_intro.asp">CSS Basics</a></li>
-                    <li><a href="https://www.w3schools.com/css/css3_flexbox.asp">CSS Flex</a></li>
-                    <li><a href="https://www.w3schools.com/css/css_grid.asp">CSS Grid</a></li>
-                    <li><a
+                <ul class="columns has-text-centered">
+                    <li class="column"><a href="https://www.w3schools.com/html/default.asp">HTML Basics</a></li>
+                    <li class="column"><a href="https://www.w3schools.com/html/html5_semantic_elements.asp">HTML
+                            Semantics</a></li>
+                    <li class="column"><a href="https://www.w3schools.com/css/css_intro.asp">CSS Basics</a></li>
+                    <li class="column"><a href="https://www.w3schools.com/css/css3_flexbox.asp">CSS Flex</a></li>
+                    <li class="column"><a href="https://www.w3schools.com/css/css_grid.asp">CSS Grid</a></li>
+                    <li class="column"><a
                             href="https://www.wix.com/blog/how-to-design-a-website#:~:text=How%20to%20design%20a%20website%201%2001.%20Set,...%207%2007.%20Design%20your%20website%20elements%20">Design
                             Principles</a></li>
 
