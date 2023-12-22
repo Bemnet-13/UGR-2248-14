@@ -5,78 +5,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/output.css">
+
 </head>
 
-<body>
-    <header>
-        <!-- image to be avatar and description -->
-        <img src="images/bemnet_a.jpg" alt="b_avatar">
-        <!-- description as p tag -->
-        <p>Much more than that</p>
-        <nav>
-            <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="Resume.html">Resume</a></li>
-                <li><a href="AboutMe.html">About</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-                <li><a href="Homage.html">Homage</a></li>
+<body class="bg-[url(images/Background_.jpg)] bg-fixed bg-cover bg-no-repeat">
+    <header class="flex flex-col md:flex-row justify-between">
+        <div class="flex justify-center md:justify-start">
+            <!-- image to be avatar and description -->
+            <img src="images/bemnet_a.jpg" class="w-16 h-16 rounded-full ml-2" alt="b_avatar">
+            <!-- description as p tag -->
+            <p class="pl-4 mt-3">Much more than that</p>
+        </div>
+        <nav class="md:justify-self-end">
+            <ul class="m-4 flex justify-between">
+                <li class="pl-4"><a href="Home.html" class="text-white hover:text-purple-800">Home</a></li>
+                <li class="pl-8"><a href="Resume.html" class="text-white hover:text-purple-800">Resume</a></li>
+                <li class="pl-8"><a href="AboutMe.html" class="text-white hover:text-purple-800">About</a></li>
+                <li class="pl-8"><a href="Contact.html" class="text-white hover:text-purple-800">Contact</a></li>
+                <li class="pl-8"><a href="Homage.html" class="text-white hover:text-purple-800">Homage</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <hgroup>
-                <!-- Preferrable heading should be selected -->
-                <h2>Project 1</h2>
-                <p>Here is my first project</p>
-            </hgroup>
-            <!-- See Project... styled like the wireframe -->
-            <a href="https://lnkd.in/eGtVaT4d">See Project 1</a>
-        </section>
+    <div class="flex flex-col justify-around sm:flex-row">
+        <main class="text-white pl-3 mb-4">
+            <section>
+                <hgroup class="text-center">
+                    <!-- Preferrable heading should be selected -->
+                    <h2>Project 1</h2>
+                    <p class="mb-4">Here is my first project</p>
+                    <!-- See Project... styled like the wireframe -->
 
-        <section>
-            <hgroup>
-                <!-- Preferrable heading should be selected -->
-                <h2>Project 2</h2>
-                <p>Here is my second project</p>
-            </hgroup>
-            <!-- See Project... styled like the wireframe -->
-            <a href="https://lnkd.in/e24Vkqvp">See Project 2</a>
-        </section>
+                    <a href="https://lnkd.in/eGtVaT4d"
+                        class="flex-none bg-zinc-500 border border-white rounded-lg p-3 text-white self-center hover:bg-zinc-800 ">See
+                        Project 1</a>
+                </hgroup>
+            </section>
 
-    </main>
-    <aside>
-        <p>If you want to know more about me, Click the link below</p>
-        <!-- link styled as button -->
-        <a href="https://www.linkedin.com/in/bemnet-aschalew-9868a2295/">Know Me</a>
-    </aside>
+            <section class="mt-2">
+                <hgroup class="text-center">
+                    <!-- Preferrable heading should be selected -->
+                    <h2>Project 2</h2>
+                    <p class="mb-4">Here is my second project</p>
+                    <!-- See Project... styled like the wireframe -->
 
-    <footer>
+                    <a href="https://lnkd.in/e24Vkqvp"
+                        class="flex-none bg-zinc-500 border border-white rounded-lg p-3 text-white self-center hover:bg-zinc-800 ">See
+                        Project 2</a>
+                </hgroup>
+            </section>
+        </main>
+
+        <aside
+            class="container mx-auto w-fit flex flex-col content-center bg-zinc-800 opacity-40 p-7 rounded-xl hover:opacity-100 text-white transition duration-150">
+            <p>If you want to know more about me, <br> Click the link below</p>
+            <!-- link styled as button -->
+            <a href="https://www.linkedin.com/in/bemnet-aschalew-9868a2295/"
+                class="flex-none bg-zinc-500 border border-white rounded-lg p-3 text-white self-center hover:bg-zinc-800">Know
+                Me</a>
+        </aside>
+    </div>
+
+    <footer class="bg-zinc-800 opacity-70 m-5 rounded-lg pt-3 pb-2 pl-3">
         <article>
-            <h2>About this website</h2>
-            This website is made as part of a project for Web Programming Course. I had fun doing. I hope you do too
-            enjoying it.
+
+            <h2 class="text-xl font-bold text-purple-800">About this website</h2>
+            <p class="text-white">
+                This website is made as part of a project for Web Programming Course. I had fun doing. I hope you do too
+                enjoying it.
+            </p>
         </article>
 
-        <section>
-            <h2>Grasp the know-how!</h2>
-
-            <p>The concepts used to develop this website are: <br></p>
+        <section class="mt-2">
+            <h2 class="text-xl text-white">Grasp the know-how!</h2>
+            <p class="text-white">The concepts used to develop this website are: <br></p>
             <nav>
-                <ul>
-                    <li><a href="https://www.w3schools.com/html/default.asp">HTML Basics</a></li>
-                    <li><a href="https://www.w3schools.com/html/html5_semantic_elements.asp">HTML Semantics</a></li>
-                    <li><a href="https://www.w3schools.com/css/css_intro.asp">CSS Basics</a></li>
-                    <li><a href="https://www.w3schools.com/css/css3_flexbox.asp">CSS Flex</a></li>
-                    <li><a href="https://www.w3schools.com/css/css_grid.asp">CSS Grid</a></li>
-                    <li><a
+                <ul class="flex flex-col justify-between hover:bg-black opacity-70 pt-3 pb-3 pl-1 pr-2 sm:flex-row">
+                    <li><a href="https://www.w3schools.com/html/default.asp"
+                            class="text-white hover:uppercase transition duration-150">HTML Basics</a>
+                    </li>
+                    <li><a href="https://www.w3schools.com/html/html5_semantic_elements.asp"
+                            class="text-white hover:uppercase transition duration-150">HTML Semantics</a></li>
+                    <li><a href="https://www.w3schools.com/css/css_intro.asp"
+                            class="text-white hover:uppercase transition duration-150">CSS Basics</a></li>
+                    <li><a href="https://www.w3schools.com/css/css3_flexbox.asp"
+                            class="text-white hover:uppercase transition duration-150">CSS Flex</a></li>
+                    <li><a href="https://www.w3schools.com/css/css_grid.asp"
+                            class="text-white hover:uppercase transition duration-150">CSS Grid</a></li>
+                    <li><a class="text-white hover:uppercase transition duration-150"
                             href="https://www.wix.com/blog/how-to-design-a-website#:~:text=How%20to%20design%20a%20website%201%2001.%20Set,...%207%2007.%20Design%20your%20website%20elements%20">Design
                             Principles</a></li>
 
                 </ul>
             </nav>
         </section>
-        <section>
+        <section class="text-white">
             <h3>Author Information</h3>
             <address>
                 Developed by: Bemnet Aschalew<br>
